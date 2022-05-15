@@ -12,6 +12,10 @@ struct Vibration_editorApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear(perform: {
+                    VibrationController.shared.isEnabled = true
+                })
         }
+        
     }
 }
