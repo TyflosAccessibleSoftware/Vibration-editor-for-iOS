@@ -7,22 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22C0E3B283360FD00593D63 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B22C0E3D283360FD00593D63 /* Localizable.strings */; };
+		B22C0E402833630A00593D63 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C0E3F2833630A00593D63 /* String+Localization.swift */; };
+		B22C0E42283364A700593D63 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C0E41283364A700593D63 /* FieldView.swift */; };
 		B2AA2C932830ABAA00C0DECA /* Vibration_editorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA2C922830ABAA00C0DECA /* Vibration_editorApp.swift */; };
 		B2AA2C952830ABAA00C0DECA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA2C942830ABAA00C0DECA /* ContentView.swift */; };
 		B2AA2C972830ABAC00C0DECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AA2C962830ABAC00C0DECA /* Assets.xcassets */; };
 		B2AA2C9A2830ABAC00C0DECA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AA2C992830ABAC00C0DECA /* Preview Assets.xcassets */; };
 		B2AA2CA12830ABE600C0DECA /* VibrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA2CA02830ABE600C0DECA /* VibrationController.swift */; };
-		B2AA2CA32830ADFE00C0DECA /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA2CA22830ADFE00C0DECA /* FieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B22C0E3C283360FD00593D63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B22C0E3E2833610400593D63 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B22C0E3F2833630A00593D63 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		B22C0E41283364A700593D63 /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 		B2AA2C8F2830ABAA00C0DECA /* Vibration editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vibration editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AA2C922830ABAA00C0DECA /* Vibration_editorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration_editorApp.swift; sourceTree = "<group>"; };
 		B2AA2C942830ABAA00C0DECA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2AA2C962830ABAC00C0DECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2AA2C992830ABAC00C0DECA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2AA2CA02830ABE600C0DECA /* VibrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibrationController.swift; sourceTree = "<group>"; };
-		B2AA2CA22830ADFE00C0DECA /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +62,10 @@
 			children = (
 				B2AA2C922830ABAA00C0DECA /* Vibration_editorApp.swift */,
 				B2AA2C942830ABAA00C0DECA /* ContentView.swift */,
-				B2AA2CA22830ADFE00C0DECA /* FieldView.swift */,
+				B22C0E41283364A700593D63 /* FieldView.swift */,
 				B2AA2CA02830ABE600C0DECA /* VibrationController.swift */,
+				B22C0E3F2833630A00593D63 /* String+Localization.swift */,
+				B22C0E3D283360FD00593D63 /* Localizable.strings */,
 				B2AA2C962830ABAC00C0DECA /* Assets.xcassets */,
 				B2AA2C982830ABAC00C0DECA /* Preview Content */,
 			);
@@ -101,7 +108,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					B2AA2C8E2830ABAA00C0DECA = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -133,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2AA2C9A2830ABAC00C0DECA /* Preview Assets.xcassets in Resources */,
+				B22C0E3B283360FD00593D63 /* Localizable.strings in Resources */,
 				B2AA2C972830ABAC00C0DECA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,19 +153,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2AA2CA12830ABE600C0DECA /* VibrationController.swift in Sources */,
-				B2AA2CA32830ADFE00C0DECA /* FieldView.swift in Sources */,
 				B2AA2C952830ABAA00C0DECA /* ContentView.swift in Sources */,
 				B2AA2C932830ABAA00C0DECA /* Vibration_editorApp.swift in Sources */,
+				B22C0E402833630A00593D63 /* String+Localization.swift in Sources */,
+				B22C0E42283364A700593D63 /* FieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B22C0E3D283360FD00593D63 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B22C0E3C283360FD00593D63 /* en */,
+				B22C0E3E2833610400593D63 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B2AA2C9B2830ABAC00C0DECA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -218,6 +240,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

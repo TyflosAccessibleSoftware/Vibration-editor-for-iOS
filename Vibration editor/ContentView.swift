@@ -13,16 +13,16 @@ struct ContentView: View {
     @State var delay: String = "0.5"
     @State var times: String = "5"
     var body: some View {
-        Text("Vibration editor")
+        Text("Vibration editor".localized)
             .font(.title)
             .accessibilityAddTraits(.isHeader)
             .padding()
             
         VStack(alignment: .center, spacing: 10) {
-            FieldView(label: "Intensity", text: $intensity)
-                        FieldView(label: "Sharpness", text: $sharpness)
-            FieldView(label: "Delay", text: $delay)
-            FieldView(label: "Times", text: $times)
+            FieldView(label: "Intensity".localized, text: $intensity)
+            FieldView(label: "Sharpness".localized, text: $sharpness)
+            FieldView(label: "Delay".localized, text: $delay)
+            FieldView(label: "Times".localized, text: $times)
         }
         .padding()
         

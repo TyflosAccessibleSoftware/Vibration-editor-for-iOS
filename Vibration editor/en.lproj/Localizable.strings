@@ -1,0 +1,13 @@
+/*
+  Localizable.strings
+  Vibration editor
+
+  Created by Jonathan Chacón Barbero on 17/5/22.
+  
+*/
+"Vibration editor" = "Vibration editor";
+"Intensity" = "Intensity";
+"Sharpness" = "Sharpness";
+"Delay" = "Delay";
+"Times" = "Times";
+"Vibrate" = "Vibrate";
