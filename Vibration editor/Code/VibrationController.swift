@@ -1,3 +1,10 @@
+//
+//  VibrationController.swift
+//  Vibration editor
+//
+//  Created by Jonathan Chacón Barbero on 17/5/22.
+//
+
 import Foundation
 import CoreHaptics
 
@@ -24,8 +31,7 @@ public final class VibrationController {
         do {
             self.engine = try CHHapticEngine()
             try engine?.start()
-            print("📳 Haptic events available")
-        } catch {
+                    } catch {
             print("📳 Haptic events error: \(error.localizedDescription)")
         }
     }

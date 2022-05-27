@@ -60,13 +60,8 @@
 		B2AA2C912830ABAA00C0DECA /* Vibration editor */ = {
 			isa = PBXGroup;
 			children = (
-				B2AA2C922830ABAA00C0DECA /* Vibration_editorApp.swift */,
-				B2AA2C942830ABAA00C0DECA /* ContentView.swift */,
-				B22C0E41283364A700593D63 /* FieldView.swift */,
-				B2AA2CA02830ABE600C0DECA /* VibrationController.swift */,
-				B22C0E3F2833630A00593D63 /* String+Localization.swift */,
-				B22C0E3D283360FD00593D63 /* Localizable.strings */,
-				B2AA2C962830ABAC00C0DECA /* Assets.xcassets */,
+				B2DE0F5428408D4F00F32BA0 /* Code */,
+				B2DE0F5328408C7600F32BA0 /* Resources */,
 				B2AA2C982830ABAC00C0DECA /* Preview Content */,
 			);
 			path = "Vibration editor";
@@ -78,6 +73,27 @@
 				B2AA2C992830ABAC00C0DECA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2DE0F5328408C7600F32BA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B22C0E3D283360FD00593D63 /* Localizable.strings */,
+				B2AA2C962830ABAC00C0DECA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2DE0F5428408D4F00F32BA0 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				B2AA2C922830ABAA00C0DECA /* Vibration_editorApp.swift */,
+				B2AA2C942830ABAA00C0DECA /* ContentView.swift */,
+				B22C0E41283364A700593D63 /* FieldView.swift */,
+				B2AA2CA02830ABE600C0DECA /* VibrationController.swift */,
+				B22C0E3F2833630A00593D63 /* String+Localization.swift */,
+			);
+			path = Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
