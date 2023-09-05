@@ -13,7 +13,6 @@
 		B2AA2C932830ABAA00C0DECA /* Vibration_editorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA2C922830ABAA00C0DECA /* Vibration_editorApp.swift */; };
 		B2AA2C952830ABAA00C0DECA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA2C942830ABAA00C0DECA /* ContentView.swift */; };
 		B2AA2C972830ABAC00C0DECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AA2C962830ABAC00C0DECA /* Assets.xcassets */; };
-		B2AA2C9A2830ABAC00C0DECA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AA2C992830ABAC00C0DECA /* Preview Assets.xcassets */; };
 		B2AA2CA12830ABE600C0DECA /* VibrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA2CA02830ABE600C0DECA /* VibrationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		B2AA2C922830ABAA00C0DECA /* Vibration_editorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration_editorApp.swift; sourceTree = "<group>"; };
 		B2AA2C942830ABAA00C0DECA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2AA2C962830ABAC00C0DECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B2AA2C992830ABAC00C0DECA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2AA2CA02830ABE600C0DECA /* VibrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibrationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,17 +60,8 @@
 			children = (
 				B2DE0F5428408D4F00F32BA0 /* Code */,
 				B2DE0F5328408C7600F32BA0 /* Resources */,
-				B2AA2C982830ABAC00C0DECA /* Preview Content */,
 			);
 			path = "Vibration editor";
-			sourceTree = "<group>";
-		};
-		B2AA2C982830ABAC00C0DECA /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				B2AA2C992830ABAC00C0DECA /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		B2DE0F5328408C7600F32BA0 /* Resources */ = {
@@ -155,7 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2AA2C9A2830ABAC00C0DECA /* Preview Assets.xcassets in Resources */,
 				B22C0E3B283360FD00593D63 /* Localizable.strings in Resources */,
 				B2AA2C972830ABAC00C0DECA /* Assets.xcassets in Resources */,
 			);
@@ -314,7 +302,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Vibration editor/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = BEU2F6LPKF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -343,7 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Vibration editor/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = BEU2F6LPKF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
