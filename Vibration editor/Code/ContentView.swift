@@ -8,26 +8,88 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showFeedbackSelector: Bool = false
+    @State var showImpactSelector: Bool = false
     @State var intensity: String = "1.0"
     @State var sharpness: String = "1.0"
     @State var delay: String = "0.5"
     @State var times: String = "5"
     var body: some View {
-        Text("Vibration editor".localized)
-            .font(.title)
-            .accessibilityAddTraits(.isHeader)
+        VStack(spacing: 0) {
+            Text("Vibration editor".localized)
+                .font(.title)
+                .accessibilityAddTraits(.isHeader)
+                .padding()
+            
+            VStack(alignment: .center, spacing: 10) {
+                FieldView(label: "Intensity".localized, text: $intensity)
+                FieldView(label: "Sharpness".localized, text: $sharpness)
+                FieldView(label: "Delay".localized, text: $delay)
+                FieldView(label: "Times".localized, text: $times)
+            }
             .padding()
             
-        VStack(alignment: .center, spacing: 10) {
-            FieldView(label: "Intensity".localized, text: $intensity)
-            FieldView(label: "Sharpness".localized, text: $sharpness)
-            FieldView(label: "Delay".localized, text: $delay)
-            FieldView(label: "Times".localized, text: $times)
+            HStack {
+                Button(action: { makeVibration() }) {
+                    Text("Vibrate")
+                }
+                Button(action: { showFeedbackSelector.toggle() }) {
+                    Text("Feedback")
+                }
+                Button(action: { showImpactSelector.toggle() }) {
+                    Text("Impact")
+                }
+            }
         }
-        .padding()
-        
-        Button(action: { makeVibration() }) {
-            Text("Vibrate")
+        .sheet(isPresented: $showImpactSelector) {
+            List {
+                Button(action: { NotificationFeedbackController.shared.playImpact(style: .soft) }) {
+                    Text("Soft")
+                }
+                .accessibilityAddTraits(.playsSound)
+                Button(action: { NotificationFeedbackController.shared.playImpact(style: .rigid) }) {
+                    Text("Rigid")
+                }
+                .accessibilityAddTraits(.playsSound)
+                Button(action: { NotificationFeedbackController.shared.playImpact(style: .light) }) {
+                    Text("Light")
+                }
+                .accessibilityAddTraits(.playsSound)
+                Button(action: { NotificationFeedbackController.shared.playImpact(style: .medium) }) {
+                    Text("Medium")
+                }
+                .accessibilityAddTraits(.playsSound)
+                Button(action: { NotificationFeedbackController.shared.playImpact(style: .heavy) }) {
+                    Text("Heavy")
+                }
+                .accessibilityAddTraits(.playsSound)
+                Button(action: { showImpactSelector.toggle() }) {
+                    Text("Close")
+                }
+            }
+        }
+        .sheet(isPresented: $showFeedbackSelector) {
+            List {
+                Button(action: { NotificationFeedbackController.shared.play(type: .success) }) {
+                    Text("Success")
+                }
+                .accessibilityAddTraits(.playsSound)
+                
+                Button(action: { NotificationFeedbackController.shared.play(type: .warning) }) {
+                    Text("Warning")
+                }
+                .accessibilityAddTraits(.playsSound)
+                
+                Button(action: { NotificationFeedbackController.shared.play(type: .error) }) {
+                    Text("Error")
+                }
+                .accessibilityAddTraits(.playsSound)
+                
+                Button(action: { showFeedbackSelector.toggle() }) {
+                    Text("Close")
+                }
+            }
+            
         }
     }
     
@@ -37,7 +99,7 @@ struct ContentView: View {
         let fDelay = Float(delay)
         let iTimes = Int(times)
         guard let fIntensity = fIntensity,
-                let fSharpness = fSharpness, let fDelay = fDelay,
+              let fSharpness = fSharpness, let fDelay = fDelay,
               let iTimes = iTimes else { return }
         let pattern: VibrationPattern =
         VibrationPattern(intensity: fIntensity,

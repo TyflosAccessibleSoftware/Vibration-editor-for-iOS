@@ -59,4 +59,5 @@ public final class VibrationController {
             print("📳 Failed vibration: \(error.localizedDescription).")
         }
     }
+    
 }

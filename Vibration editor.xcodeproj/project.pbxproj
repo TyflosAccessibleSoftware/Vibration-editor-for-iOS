@@ -14,6 +14,7 @@
 		B2AA2C952830ABAA00C0DECA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA2C942830ABAA00C0DECA /* ContentView.swift */; };
 		B2AA2C972830ABAC00C0DECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AA2C962830ABAC00C0DECA /* Assets.xcassets */; };
 		B2AA2CA12830ABE600C0DECA /* VibrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA2CA02830ABE600C0DECA /* VibrationController.swift */; };
+		B2DF14432AA6D76F004D5CD8 /* NotificationFeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DF14422AA6D76F004D5CD8 /* NotificationFeedbackController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B2AA2C942830ABAA00C0DECA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2AA2C962830ABAC00C0DECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2AA2CA02830ABE600C0DECA /* VibrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibrationController.swift; sourceTree = "<group>"; };
+		B2DF14422AA6D76F004D5CD8 /* NotificationFeedbackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFeedbackController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				B2AA2C942830ABAA00C0DECA /* ContentView.swift */,
 				B22C0E41283364A700593D63 /* FieldView.swift */,
 				B2AA2CA02830ABE600C0DECA /* VibrationController.swift */,
+				B2DF14422AA6D76F004D5CD8 /* NotificationFeedbackController.swift */,
 				B22C0E3F2833630A00593D63 /* String+Localization.swift */,
 			);
 			path = Code;
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2AA2CA12830ABE600C0DECA /* VibrationController.swift in Sources */,
+				B2DF14432AA6D76F004D5CD8 /* NotificationFeedbackController.swift in Sources */,
 				B2AA2C952830ABAA00C0DECA /* ContentView.swift in Sources */,
 				B2AA2C932830ABAA00C0DECA /* Vibration_editorApp.swift in Sources */,
 				B22C0E402833630A00593D63 /* String+Localization.swift in Sources */,
